@@ -9,5 +9,11 @@ public class MainEncadrement {
 
         System.out.println("Recherche de l'optimum local");
         en.encadrer(0, 250, 500);
+
+        FonctionTraverser ft2 = new FonctionTraverser(1000, 1000);
+        Encadrement en2 = new Encadrement(ft2);
+
+        System.out.println("Recherche de l'optimum local en diagonale");
+        en2.encadrer(0, 250, 500);
     }
 }
