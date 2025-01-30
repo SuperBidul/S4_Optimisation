@@ -12,7 +12,7 @@ public class Encadrement {
         } else {
             while (a - milieu <= 0.01 || c - milieu <= 0.01) {
                 milieu = (a + b) / 2;
-                System.out.println(milieu);
+                System.out.printf("%2.10f \n", milieu);
 
                 if (f1D.getF(milieu) < f1D.getF(b)) {
                     c = b;
@@ -24,7 +24,7 @@ public class Encadrement {
                 }
 
                 milieu = (b + c) / 2;
-                System.out.println(milieu);
+                System.out.printf("%2.10f \n", milieu);
 
                 if (f1D.getF(milieu) < f1D.getF(b)) {
                     a = b;
