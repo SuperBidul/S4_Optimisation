@@ -9,7 +9,7 @@ public class EncadrerDerivee {
 
         if(a > b){
             throw new IllegalArgumentException("mauvais ordre des valeurs");
-        } else if (f1d.getF(a) > f1d.getF(b)) {
+        } else if (f1d.getF(a) * f1d.getF(b) > 0) {
             throw new IllegalArgumentException("Intervalle de dérivée sans changement de signe");
         }
 
