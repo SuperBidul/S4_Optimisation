@@ -24,5 +24,6 @@ public class Golf implements Fonction1D {
         }
 
         return Math.abs(distanceParcourue - distanceCible);
+        //return distanceParcourue;
     }
 }
