@@ -14,7 +14,7 @@ public class Main {
         Affichage a = new Affichage(1000, 600, "Fct traverse");
         a.setXMinMax(0,500);
         a.setYMinMax(ft);
-        a.afficher(ft, Color.BLACK);
+        a.afficher(ft, Color.BLUE);
         a.rendreEcran();
     }
 }
