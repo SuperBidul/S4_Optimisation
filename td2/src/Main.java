@@ -1,3 +1,5 @@
+import java.awt.*;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -8,5 +10,11 @@ public class Main {
 
         System.out.println("lorsque le point A est `a la verticale du point A, la dur´ee de d´eplacement est d’environ 0.197497 h.");
         System.out.println(ft.getF(0));
+
+        Affichage a = new Affichage(1000, 600, "Fct traverse");
+        a.setXMinMax(0,500);
+        a.setYMinMax(ft);
+        a.afficher(ft, Color.BLACK);
+        a.rendreEcran();
     }
 }
