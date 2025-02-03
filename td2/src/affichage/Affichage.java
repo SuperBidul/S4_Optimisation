@@ -1,4 +1,6 @@
-// import classes graphiques
+package affichage;// import classes graphiques
+import fonction.Fonction1D;
+
 import java.awt.*;
 import java.awt.image.*;
 import javax.swing.*;

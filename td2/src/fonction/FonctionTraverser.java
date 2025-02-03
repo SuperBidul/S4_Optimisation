@@ -1,4 +1,6 @@
-public class FonctionTraverser implements Fonction1D{
+package fonction;
+
+public class FonctionTraverser implements Fonction1D {
 
     double vEau;
     double vSol;

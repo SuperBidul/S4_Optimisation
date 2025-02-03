@@ -1,4 +1,6 @@
-public class Derivee implements Fonction1D{
+package fonction;
+
+public class Derivee implements Fonction1D {
 
     Fonction1D aDeriver;
     double dx;

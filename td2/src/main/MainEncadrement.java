@@ -1,3 +1,8 @@
+package main;
+
+import encadrement.Encadrement;
+import fonction.FonctionTraverser;
+
 public class MainEncadrement {
     public static void main(String[] args) {
 

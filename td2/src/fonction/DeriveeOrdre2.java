@@ -1,4 +1,6 @@
-public class DeriveeOrdre2 implements Fonction1D{
+package fonction;
+
+public class DeriveeOrdre2 implements Fonction1D {
 
     Fonction1D aDeriver;
     double dx;

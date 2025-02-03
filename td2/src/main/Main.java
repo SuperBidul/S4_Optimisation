@@ -1,3 +1,9 @@
+package main;
+
+import affichage.Affichage;
+import fonction.FonctionTraverser;
+import fonction.Tangeante;
+
 import java.awt.*;
 
 public class Main {

@@ -1,3 +1,5 @@
+package fonction;
+
 public class Tangeante implements Fonction1D {
 
     Fonction1D f1d;

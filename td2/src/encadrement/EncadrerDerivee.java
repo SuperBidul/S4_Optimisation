@@ -1,3 +1,8 @@
+package encadrement;
+
+import fonction.Derivee;
+import fonction.Fonction1D;
+
 public class EncadrerDerivee {
     Fonction1D f1d;
 

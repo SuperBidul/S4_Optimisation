@@ -1,3 +1,10 @@
+package main;
+
+import encadrement.Encadrement;
+import fonction.Derivee;
+import fonction.Fonction1D;
+import fonction.FonctionTraverser;
+
 public class MainDerivee {
     public static void main(String[] args) {
 

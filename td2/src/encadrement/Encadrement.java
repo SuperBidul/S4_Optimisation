@@ -1,3 +1,7 @@
+package encadrement;
+
+import fonction.Fonction1D;
+
 public class Encadrement {
     Fonction1D f1D;
 
