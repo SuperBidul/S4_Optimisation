@@ -3,11 +3,14 @@ package encadrement;
 import fonction.Derivee;
 import fonction.Fonction1D;
 
+import static fonction.Derivee.DX;
+
 public class EncadrerDerivee {
+
     Fonction1D f1d;
 
     public EncadrerDerivee(Fonction1D f1){
-        this.f1d = new Derivee(f1, 0.001);
+        this.f1d = new Derivee(f1, DX);
     }
 
     public double encadrer(double a, double b){
@@ -20,7 +23,7 @@ public class EncadrerDerivee {
 
         double milieu = 0;
 
-        while ((b - a) > 0.001) {
+        while ((b - a) > Derivee.DX) {
 
             //1 Prendre milieu m = a+b
             milieu = (a + b) / 2;

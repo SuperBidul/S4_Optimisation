@@ -6,6 +6,6 @@ public class CosCarre implements Fonction1D {
 
     @Override
     public double getF(double x) {
-        return cos(x)*((x-1)*(x-1));
+        return cos(x) * Math.pow(x-1, 2);
     }
 }

@@ -10,7 +10,7 @@ public class MainDerivee {
 
         FonctionTraverser ft = new FonctionTraverser(3000, 15000);
 
-        Derivee derive = new Derivee(ft, 0.001);
+        Derivee derive = new Derivee(ft, Derivee.DX);
 
         Encadrement en = new Encadrement(ft);
 
@@ -31,7 +31,7 @@ public class MainDerivee {
             return (x-2)*(x-1);
         } };
 
-        Derivee derive2 = new Derivee(fct, 0.001);
+        Derivee derive2 = new Derivee(fct, Derivee.DX);
 
         for (int i = 0; i <= 5; i += 1){
             System.out.println("x = "+i);

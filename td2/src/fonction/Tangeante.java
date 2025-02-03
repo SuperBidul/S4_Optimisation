@@ -8,7 +8,7 @@ public class Tangeante implements Fonction1D {
 
     public Tangeante(Fonction1D f1d, int x0){
         this.f1d = f1d;
-        this.derivee = new Derivee(f1d, 0.001);
+        this.derivee = new Derivee(f1d, Derivee.DX);
         this.x0 = x0;
     }
 

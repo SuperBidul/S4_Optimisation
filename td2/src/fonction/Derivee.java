@@ -2,6 +2,8 @@ package fonction;
 
 public class Derivee implements Fonction1D {
 
+    public static final double DX = 0.001;
+
     Fonction1D aDeriver;
     double dx;
 
