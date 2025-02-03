@@ -15,6 +15,12 @@ public class Main {
         a.setXMinMax(0,500);
         a.setYMinMax(ft);
         a.afficher(ft, Color.BLUE);
+
+        Tangeante t = new Tangeante(ft, 200);
+        a.afficher(t, Color.red);
+
+        a.dessinerPoint(200, ft.getF(200));
+
         a.rendreEcran();
     }
 }
