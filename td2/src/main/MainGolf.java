@@ -12,12 +12,12 @@ import static fonction.Derivee.DX;
 
 public class MainGolf {
     public static void main (String[] args){
-        Golf g = new Golf(50);
+        Golf g = new Golf(10);
 
         Affichage a = new Affichage(1000, 600, "Fonction Golf");
         Derivee derivee = new Derivee(g, Derivee.DX);
 
-        a.setXMinMax(0,10);
+        a.setXMinMax(0,2);
         a.setYMinMax(derivee);
 
         a.afficher(derivee, Color.red);

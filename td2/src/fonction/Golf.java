@@ -23,7 +23,7 @@ public class Golf implements Fonction1D {
             vitesse *= 0.9; // Réduire la vitesse de 10% à chaque étape
         }
 
-        return Math.abs(distanceParcourue - distanceCible);
+        return Math.pow(distanceParcourue - distanceCible, 2);
         //return distanceParcourue;
     }
 }
