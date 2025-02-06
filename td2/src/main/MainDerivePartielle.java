@@ -7,10 +7,7 @@ import encadrement.EncadrerDerivee;
 import fonction.Fonction1D;
 import fonction.utile.Derivee;
 import fonction.utile.Tangeante;
-import tp4.FonctionCoupeX;
-import tp4.FonctionCoupeY;
-import tp4.FonctionD;
-import tp4.Himmelblau;
+import tp4.*;
 
 import java.awt.*;
 
@@ -31,14 +28,12 @@ public class MainDerivePartielle {
         double[] tabDx = {x0+EPSILON, y0};
         double deriveePX = (himmelblau.getValeur(tabDx) - himmelblau.getValeur(pointDepart))/EPSILON;
 
-
         double[] tabDy = {x0, y0+EPSILON};
         double deriveePY = (himmelblau.getValeur(tabDy) - himmelblau.getValeur(pointDepart))/EPSILON;
 
         System.out.println(deriveePX + "\n"+deriveePY);
 
         //Appel de coupeX et coupeY pour affichage
-
         FonctionCoupeX fcx = new FonctionCoupeX(himmelblau, pointDepart[0]);
         FonctionCoupeY fcy = new FonctionCoupeY(himmelblau, pointDepart[1]);
 
@@ -73,9 +68,26 @@ public class MainDerivePartielle {
         double y = dg2.encadrer(DX, 2);
         a2.dessinerPoint(y, fcy.getF(y));
 
-        System.out.println("Point y: "+y+" "+ fcx.getF(y));
+        System.out.println("Point y: "+y+" "+ fcy.getF(y));
 
         a2.rendreEcran();
+
+        // ------- Test de FonctionCoupe
+        FonctionCoupe fc = new FonctionCoupe(himmelblau, 0, pointDepart);
+
+        DescenteGradient dg3 = new DescenteGradient(fc, 0.01);
+
+        Affichage a3 = new Affichage(1000, 600, "Fonction Coupe X");
+        a3.setXMinMax(-6,6);
+        a3.setYMinMax(fc);
+
+        a3.afficher(fc, Color.black);
+
+        double y2 = dg3.encadrer(DX, 1);
+        a3.dessinerPoint(y2, fcy.getF(y2));
+        a3.rendreEcran();
+
+        System.out.println("Essaie fonctionCoupe avec x : "+y2+" "+fc.getF(y2));
 
         /*
         //Derivee partielle dimension N
