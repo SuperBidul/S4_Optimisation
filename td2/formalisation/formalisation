@@ -5,7 +5,7 @@
 x, y -> points dans l'environnement 2D
 
 2. Un critère de performance
-L'extérieur cercle doit passer le plus proche des points
+L'extérieur tp3.cercle doit passer le plus proche des points
 Le point doit être le plus au milieu possible des points
 Le rayon doit rester le plus au milieu possible des points
 
