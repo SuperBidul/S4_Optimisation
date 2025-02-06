@@ -2,7 +2,7 @@ package main;
 
 import encadrement.EncadrerDerivee;
 import fonction.Fonction1D;
-import fonction.FonctionTraverser;
+import fonction.tp1.FonctionTraverser;
 
 public class MainEncadrerDerivee {
     public static void main(String[] args) {

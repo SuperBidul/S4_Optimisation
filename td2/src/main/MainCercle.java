@@ -2,6 +2,7 @@ package main;
 
 import cercle.ProblemeCercle;
 import encadrement.Encadrement;
+import fonction.utile.Derivee;
 import fonction.cercle.FonctionRayon;
 import fonction.cercle.FonctionX;
 import fonction.cercle.FonctionY;
@@ -9,6 +10,8 @@ import fonction.cercle.FonctionY;
 import java.awt.geom.Point2D;
 import java.util.ArrayList;
 import java.util.List;
+
+import static fonction.utile.Derivee.DX;
 
 public class MainCercle {
     public static void main(String[] args) {
@@ -26,7 +29,6 @@ public class MainCercle {
 
         // Paramètres initiaux
         double x = 0, y = 0, r = 100;
-        double PRECISION = 0.001;
         boolean converged = false;
         int iterations = 0;
 
@@ -51,7 +53,7 @@ public class MainCercle {
             x = encadrement.encadrer(x - 10, x, x + 10);
 
             // Vérifier la convergence
-            if (Math.abs(oldX - x) < PRECISION && Math.abs(oldY - y) < PRECISION && Math.abs(oldR - r) < PRECISION) {
+            if (Math.abs(oldX - x) < DX && Math.abs(oldY - y) < Derivee.DX && Math.abs(oldR - r) < DX) {
                 converged = true;
             }
 

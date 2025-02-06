@@ -1,4 +1,6 @@
-package fonction;
+package fonction.tp1;
+
+import fonction.Fonction1D;
 
 public class FonctionTraverser implements Fonction1D {
 

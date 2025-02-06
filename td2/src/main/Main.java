@@ -1,8 +1,8 @@
 package main;
 
 import affichage.Affichage;
-import fonction.FonctionTraverser;
-import fonction.Tangeante;
+import fonction.tp1.FonctionTraverser;
+import fonction.utile.Tangeante;
 
 import java.awt.*;
 

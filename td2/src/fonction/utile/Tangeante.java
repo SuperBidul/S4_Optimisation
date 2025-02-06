@@ -1,4 +1,6 @@
-package fonction;
+package fonction.utile;
+
+import fonction.Fonction1D;
 
 public class Tangeante implements Fonction1D {
 

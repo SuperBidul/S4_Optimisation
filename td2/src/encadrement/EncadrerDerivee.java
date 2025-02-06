@@ -1,9 +1,9 @@
 package encadrement;
 
-import fonction.Derivee;
+import fonction.utile.Derivee;
 import fonction.Fonction1D;
 
-import static fonction.Derivee.DX;
+import static fonction.utile.Derivee.DX;
 
 public class EncadrerDerivee {
 

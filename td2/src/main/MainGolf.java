@@ -2,13 +2,12 @@ package main;
 
 import affichage.Affichage;
 import encadrement.DescenteGradient;
-import fonction.Derivee;
-import fonction.Golf;
-import fonction.Tangeante;
+import fonction.utile.Derivee;
+import fonction.tp3.Golf;
 
 import java.awt.*;
 
-import static fonction.Derivee.DX;
+import static fonction.utile.Derivee.DX;
 
 public class MainGolf {
     public static void main (String[] args){

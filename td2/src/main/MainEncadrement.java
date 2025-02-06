@@ -1,7 +1,7 @@
 package main;
 
 import encadrement.Encadrement;
-import fonction.FonctionTraverser;
+import fonction.tp1.FonctionTraverser;
 
 public class MainEncadrement {
     public static void main(String[] args) {

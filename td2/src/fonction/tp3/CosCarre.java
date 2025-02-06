@@ -1,4 +1,6 @@
-package fonction;
+package fonction.tp3;
+
+import fonction.Fonction1D;
 
 import static java.lang.Math.cos;
 

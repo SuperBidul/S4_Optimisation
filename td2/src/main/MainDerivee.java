@@ -1,9 +1,9 @@
 package main;
 
 import encadrement.Encadrement;
-import fonction.Derivee;
+import fonction.utile.Derivee;
 import fonction.Fonction1D;
-import fonction.FonctionTraverser;
+import fonction.tp1.FonctionTraverser;
 
 public class MainDerivee {
     public static void main(String[] args) {

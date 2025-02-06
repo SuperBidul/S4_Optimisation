@@ -1,6 +1,6 @@
 package encadrement;
 
-import fonction.Derivee;
+import fonction.utile.Derivee;
 import fonction.Fonction1D;
 
 public class DescenteGradient {

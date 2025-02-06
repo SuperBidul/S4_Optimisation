@@ -2,11 +2,11 @@ package main;
 
 import affichage.Affichage;
 import encadrement.DescenteGradient;
-import fonction.CosCarre;
+import fonction.tp3.CosCarre;
 
 import java.awt.*;
 
-import static fonction.Derivee.DX;
+import static fonction.utile.Derivee.DX;
 
 public class MainCosCarre {
 
