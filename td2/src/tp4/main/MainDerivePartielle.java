@@ -91,8 +91,11 @@ public class MainDerivePartielle {
 
         // ---------- Test de Gradient
         Gradient gradient = new Gradient(himmelblau, EPSILON);
-        System.out.println("Test fonctionCoupe avec x : "+gradient.getDerivee(0, pointDepart));
-        System.out.println("Test fonctionCoupe avec y : "+gradient.getDerivee(1, pointDepart));
+        System.out.println("Test Gradient getDerivee avec x : "+gradient.getDerivee(0, pointDepart));
+        System.out.println("Test Gradiant getDerivee avec y : "+gradient.getDerivee(1, pointDepart));
+
+        double[] res = gradient.getGradient(pointDepart);
+        System.out.println("\nTest getGradient : "+res[0]+" "+res[1]);
 
         /*
         //Derivee partielle dimension N

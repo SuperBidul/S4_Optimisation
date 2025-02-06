@@ -31,4 +31,18 @@ public class Gradient {
 
         return deriveePartielle;
     }
+
+    public double[] getGradient(double[] x0){
+        //faire le tour de toutes les dimensons -> boucle
+        double[] res = new double[x0.length];
+        //debut boucle
+        for (int i = 0; i < x0.length; i++) {
+            //remplis le tableau des valeurs trouvee avec getDerivee
+            res[i] = getDerivee(i, x0);
+        //fin boucle
+        }
+
+        //return tableau remplis
+        return res;
+    }
 }
