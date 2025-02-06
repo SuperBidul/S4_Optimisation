@@ -25,7 +25,7 @@ public class MainGolf {
 
         // Descente de gradient pour trouver la vitesse optimale
         DescenteGradient dg = new DescenteGradient(g, 0.01);
-        double vitesseOptimale = dg.encadrer(0.001, DescenteGradient.POINT_DEPART);
+        double vitesseOptimale = dg.encadrer(DX, DescenteGradient.POINT_DEPART);
 
         System.out.println("\nVitesse optimale trouvée : " + vitesseOptimale);
         System.out.printf("\nEquart obtenu avec cette vitesse : %2.6f", g.getF(vitesseOptimale));

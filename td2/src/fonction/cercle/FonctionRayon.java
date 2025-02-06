@@ -1,8 +1,9 @@
-package fonction;
+package fonction.cercle;
 
 import cercle.ProblemeCercle;
+import fonction.Fonction1D;
 
-public class FonctionRayon implements Fonction1D{
+public class FonctionRayon implements Fonction1D {
 
     ProblemeCercle pc;
     double x;
