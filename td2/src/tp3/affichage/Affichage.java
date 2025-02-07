@@ -313,7 +313,7 @@ public class Affichage{
     }
 
     /**
-     * Permet de modifier l'intervale sur X (echelle) pour l'tp3.affichage
+     * Permet de modifier l'intervale sur X (echelle) pour le tp3.affichage
      *
      * @param min valeur minimale de x
      * @param max valeur maximale de x
