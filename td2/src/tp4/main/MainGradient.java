@@ -1,6 +1,6 @@
 package tp4.main;
 
-import tp3.encadrement.DescenteGradient;
+import tp4.encadrement.DescenteGradient;
 import tp4.fonction1D.FonctionCoupe;
 import tp4.fonctionD.Himmelblau;
 import tp4.utile.Gradient;
@@ -22,5 +22,13 @@ public class MainGradient {
             pointDep[0] -= EPSILON*pointDepGrad[0];
             pointDep[1] -= EPSILON*pointDepGrad[1];
         }
+        System.out.println("it 10 - x = ("+pointDep[0]+","+pointDep[1]+") - f(x) = "+hb.getValeur(pointDep));
+
+        DescenteGradient dG = new DescenteGradient(hb, 0.01);
+
+        double[] pointDep2 = {4, -1};
+
+        System.out.println("\nEssai de la méthode optimiser de DescenteGradient :");
+        dG.optimiser(10, pointDep2);
     }
 }
