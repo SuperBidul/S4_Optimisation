@@ -8,6 +8,7 @@ public class FonctionCercle extends FonctionD {
 
     public FonctionCercle(ProblemeRF probleme) {
         this.probleme = probleme;
+        super.nbDim = 3;
     }
 
     @Override

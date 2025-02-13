@@ -31,7 +31,7 @@ public class SauveImage {
 
     }
 
-    private void effacerImage() {
+    void effacerImage() {
         // taille du bord
         int decal = 4;
 

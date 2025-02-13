@@ -1,5 +1,7 @@
 package tp4.ex2.etudiant;
 
+import tp4.ex1.encadrement.DescenteGradient;
+
 public class Main {
     public static void main(String[] args) {
         //test de l'ensemble et sauvegarde
@@ -19,7 +21,24 @@ public class Main {
         image.dessinerPoints(pb.points);
         image.sauverImage("test_image.png");
 
+        // optimisation du cercle
+        FonctionCercle fc = new FonctionCercle(pb);
+        double x = c.getX();
+        double y = c.getY();
+        double r = c.getRayon();
+        double[] cercle = {x, y ,r};
 
+        double perf = fc.getValeur(cercle);
+        DescenteGradient dg = new DescenteGradient(fc, 0.01);
+        Cercle cercleOpti = new Cercle(dg.optimiser(10000, cercle));
+
+        // on creer l'image et on ajoute les éléments
+        image.effacerImage();
+
+        image = new SauveImage(500,500);
+        image.dessinerCercle(cercleOpti);
+        image.dessinerPoints(pb.points);
+        image.sauverImage("test_image2.png");
 
     }
 }
