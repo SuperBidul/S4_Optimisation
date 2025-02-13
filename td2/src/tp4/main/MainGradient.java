@@ -30,5 +30,11 @@ public class MainGradient {
 
         System.out.println("\nEssai de la méthode optimiser de DescenteGradient :");
         dG.optimiser(10, pointDep2);
+
+        DescenteGradient dG2 = new DescenteGradient(hb, 0.1);
+        pointDep = new double[]{1.0, 2.0};
+
+        System.out.println("\nObserver le comportement de la descente de gradient en utilisant un pas d’apprentissage α de 0.1 :");
+        dG2.optimiser(3, pointDep);
     }
 }

@@ -17,16 +17,15 @@ public class DescenteGradient {
     }
 
     public double[] optimiser(int nbIteration, double[] x){
-        //2 partir de x0, y0
 
         //Recommencer jusqu'à une condition d’arrêt (nb itération)
         for(int i = 0; i < nbIteration; i++){
             //Déplacer dans la direction opposée au Gradient
             double[] pointDepGrad = g.getGradient(x);
-            System.out.println("it "+i+" - x = ("+x[0]+","+x[1]+") - f(x) = "+fD.getValeur(x) + " grad(x) = ("+pointDepGrad[0]+","+pointDepGrad[1]+")");
-            //Estimer le gradient en (x0, y0) (derivees partielles)
-            x[0] -= EPSILON*pointDepGrad[0];
-            x[1] -= EPSILON*pointDepGrad[1];
+            System.out.printf("it %d - x = (%.5f, %.5f) - f(x) = %.5f - grad(x) = (%.5f, %.5f)\n", i, x[0], x[1], fD.getValeur(x), pointDepGrad[0], pointDepGrad[1]);
+            //Estimer le gradient en (x0, y0) (derivées partielles)
+            x[0] -= pas*pointDepGrad[0];
+            x[1] -= pas*pointDepGrad[1];
         }
         //retourne un tableau
         return x;
