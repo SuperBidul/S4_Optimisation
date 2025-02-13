@@ -43,13 +43,15 @@ public class ProblemeRF {
      * @return l'erreur moyenne commise
      */
     public double evaluer(Cercle c) {
+        double perf = 0;
 
-        //######################################"
-        throw new Error("#### A FAIRE ####");
-        //#######################################
+        for (Point2D point : points) {
+            double distance = point.distance(c.getCentre());
+            perf += Math.pow(distance - c.getRayon(), 2);
+        }
+
+        return perf;
     }
-
-
 
     public void addPoint(Point2D nouveauPoint) {
         this.points.add(nouveauPoint);

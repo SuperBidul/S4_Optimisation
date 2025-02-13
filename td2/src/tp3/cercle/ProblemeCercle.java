@@ -10,7 +10,7 @@ public class ProblemeCercle {
         this.point2DS = point2DS;
     }
 
-    // La méthode calcule l'erreur entre le tp3.cercle et les points
+    // La méthode calcule l'erreur entre le cercle et les points
     public double performance(double x, double y, double r) {
         double perf = 0;
 
