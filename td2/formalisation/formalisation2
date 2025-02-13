@@ -1,0 +1,10 @@
+données :
+Un ensemble de points en 2D
+espace de recherche :
+Inconnues : x, y -> coordonnées du cercle
+r -> rayon du cercle
+
+critère à optimiser :
+L'extérieur du cercle doit passer le plus proche des points
+Le point central du cercle doit être le plus au milieu possible des points
+Tout les points doivent avoir le minimum de distance avec le rayon
