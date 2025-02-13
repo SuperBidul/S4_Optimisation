@@ -1,4 +1,4 @@
-package tp4.fonctionD;
+package tp4.ex1.fonctionD;
 
 public class Himmelblau extends FonctionD {
 

@@ -1,8 +1,6 @@
-package tp4.utile;
+package tp4.ex1.utile;
 
-import tp4.fonctionD.FonctionD;
-
-import static tp4.fonctionD.Himmelblau.EPSILON;
+import tp4.ex1.fonctionD.FonctionD;
 
 public class Gradient {
 

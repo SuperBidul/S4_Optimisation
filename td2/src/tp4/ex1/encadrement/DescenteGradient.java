@@ -1,10 +1,7 @@
-package tp4.encadrement;
+package tp4.ex1.encadrement;
 
-import tp4.fonctionD.FonctionD;
-import tp4.utile.Gradient;
-
-import static java.lang.Double.MAX_VALUE;
-import static tp4.fonctionD.Himmelblau.EPSILON;
+import tp4.ex1.fonctionD.FonctionD;
+import tp4.ex1.utile.Gradient;
 
 public class DescenteGradient {
     FonctionD fD;

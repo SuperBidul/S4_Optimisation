@@ -1,11 +1,10 @@
-package tp4.main;
+package tp4.ex1.main;
 
-import tp4.encadrement.DescenteGradient;
-import tp4.fonction1D.FonctionCoupe;
-import tp4.fonctionD.Himmelblau;
-import tp4.utile.Gradient;
+import tp4.ex1.encadrement.DescenteGradient;
+import tp4.ex1.fonctionD.Himmelblau;
+import tp4.ex1.utile.Gradient;
 
-import static tp4.fonctionD.Himmelblau.EPSILON;
+import static tp4.ex1.fonctionD.Himmelblau.EPSILON;
 
 public class MainGradient {
     public static void main (String[] args){

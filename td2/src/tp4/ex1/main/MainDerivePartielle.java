@@ -1,18 +1,18 @@
-package tp4.main;
+package tp4.ex1.main;
 
 import tp3.affichage.Affichage;
 import tp3.encadrement.DescenteGradient;
 import tp3.fonction.utile.Tangeante;
-import tp4.fonction1D.FonctionCoupe;
-import tp4.fonction1D.FonctionCoupeX;
-import tp4.fonction1D.FonctionCoupeY;
-import tp4.fonctionD.Himmelblau;
-import tp4.utile.Gradient;
+import tp4.ex1.fonction1D.FonctionCoupe;
+import tp4.ex1.fonction1D.FonctionCoupeX;
+import tp4.ex1.fonction1D.FonctionCoupeY;
+import tp4.ex1.fonctionD.Himmelblau;
+import tp4.ex1.utile.Gradient;
 
 import java.awt.*;
 
 import static tp3.fonction.utile.Derivee.DX;
-import static tp4.fonctionD.Himmelblau.EPSILON;
+import static tp4.ex1.fonctionD.Himmelblau.EPSILON;
 
 public class MainDerivePartielle {
     public static void main(String[] args){

@@ -1,7 +1,7 @@
-package tp4.fonction1D;
+package tp4.ex1.fonction1D;
 
 import tp3.fonction.Fonction1D;
-import tp4.fonctionD.FonctionD;
+import tp4.ex1.fonctionD.FonctionD;
 
 public class FonctionCoupe implements Fonction1D {
 
